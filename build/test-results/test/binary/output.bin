@@ -1,0 +1,8 @@
+Allowed format: 
+HH MM (ex: 08 15 or 14 30)
+HH:MM (ex: 08:15 or 14:30)
+HH-MM (ex: 08-15 or 14-30)
+HH/MM (ex: 08/15 or 14/30)
+HHˆMM (ex: 08ˆ15 or 14ˆ30)
+HH;MM (ex: 08;15 or 14;30)
+$Enter hour and minute information: 

@@ -25,8 +25,8 @@ class ClockService(
             throw InvalidTimeFormatException("Invalid hours or minutes value")
         }
 
-        val minAngle = (min * MINUTE_ANGLE + MINUTE_DELTA_ANGLE).toInt()
-        val hourAngle = (hour % QUANTITY_HOURS_DAY * HOUR_ANGLE + HOUR_DELTA_ANGLE * min).toInt()
+        val minAngle = min * MINUTE_ANGLE + MINUTE_DELTA_ANGLE
+        val hourAngle = hour % QUANTITY_HOURS_DAY * HOUR_ANGLE + HOUR_DELTA_ANGLE * min
 
         var angle = hourAngle - minAngle
 

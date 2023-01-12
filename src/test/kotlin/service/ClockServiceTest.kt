@@ -28,17 +28,17 @@ class ClockServiceTest {
 
     @ParameterizedTest
     @CsvSource(
-        "00 00, 0",
-        "06 00, 90",
-        "02:10, 32",
-        "15-00, 225",
-        "17/00, 255",
-        "18ˆ00, 270",
-        "23;00, 345",
-        "03 15, 48"
+        "00 00, 0.0",
+        "06 00, 90.0",
+        "02:10, 32.5",
+        "15-00, 225.0",
+        "17/00, 255.0",
+        "18ˆ00, 270.0",
+        "23;00, 345.0",
+        "03 15, 48.75"
     )
     fun `Given input of hour and minute with different formats then should handle and print correctly the angle`(
-        input: String, expected: Int
+        input: String, expected: Double
     ) {
         every { timeInputProvider.getTime(any()) } returns getHourAndMin(input)
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainKtTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-12T04:41:20" hostname="MacBooks-MBP.lan" time="0.13">
+  <properties/>
+  <testcase name="main method no arguments should return a proper angle()" classname="MainKtTest" time="0.103"/>
+  <testcase name="main method should return a proper angle()" classname="MainKtTest" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

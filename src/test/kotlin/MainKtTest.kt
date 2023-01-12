@@ -23,7 +23,7 @@ class MainKtTest {
     @Test
     fun `main method should return a proper angle`() {
 
-        val clockAngle = ClockAngle(angle = 90, hourAngle = 90, minAngle = 90)
+        val clockAngle = ClockAngle(angle = 90.0, hourAngle = 90.0, minAngle = 90.0)
         val input = "06:00"
         every { menu.userMenu() } returns input
         every { clockService.handleHourAndMinute(input) } returns clockAngle
@@ -33,7 +33,7 @@ class MainKtTest {
         }
 
         assertEquals(
-            "Hour angle is 90, Minute angle is 0",
+            "Hour angle is 90.0, Minute angle is 0.1",
             output.trim()
         )
     }
@@ -41,7 +41,7 @@ class MainKtTest {
     @Test
     fun `main method no arguments should return a proper angle`() {
 
-        val clockAngle = ClockAngle(angle = 90, hourAngle = 90, minAngle = 90)
+        val clockAngle = ClockAngle(angle = 90.0, hourAngle = 90.0, minAngle = 90.0)
         val input = "06:00"
         every { menu.userMenu() } returns input
         every { clockService.handleHourAndMinute(input) } returns clockAngle
@@ -61,7 +61,7 @@ class MainKtTest {
                 "HHˆMM (ex: 08ˆ15 or 14ˆ30)\n" +
                 "HH;MM (ex: 08;15 or 14;30)\n" +
                 "Enter hour and minute information: \n" +
-                "Hour angle is 90, Minute angle is 0".trim()
+                "Hour angle is 90.0, Minute angle is 0.1".trim()
 
         assertEquals(
             message,

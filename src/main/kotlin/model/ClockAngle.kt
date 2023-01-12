@@ -1,12 +1,12 @@
 package model
 
 data class ClockAngle(
-    var angle: Int = 0,
-    var hourAngle: Int = 0,
-    var minAngle: Int = 0
+    var angle: Double = 0.0,
+    var hourAngle: Double = 0.0,
+    var minAngle: Double = 0.0
 ) {
     init {
-        require(angle in 0..360) { "angle should be between 0 and 360" }
+        require(angle in 0.0..360.0) { "angle should be between 0 and 360" }
     }
 
     override fun toString(): String {
